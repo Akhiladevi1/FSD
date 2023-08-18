@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js task</title>
+</head>
+<body>
+  <table id="table" border="1">
+  	<thead>
+  		<th>course name</th>
+  		<th>course number</th>
+  		<th>course fee</th>
+  		<th>place</th>
+  	</thead>
+  </table>
+  <table id="table" border="1"></table>
+  <script type="text/javascript">
+  	let users= [
+	{
+		name: 'name1',
+		number: '123',
+		fee: '5000',
+		location:'kakinada'
+	},
+	{
+		name: 'name2',
+		number: '456',
+		fee: '5000',
+		location:'rajahmundry'
+	},
+	{
+		name: 'name3',
+		number: '789',
+		fee: '5000',
+		location:'Samarlakot'
+	},
+	{
+		name: 'name4',
+		number: '134',
+		fee: '5000',
+		location:'Vizag'
+	},
+];
+
+	let table = document.getElementById('table');
+
+for (let user of users) {
+	let tr = document.createElement('tr');
+	
+	let td1 = document.createElement('td');
+	td1.textContent = user.name;
+	tr.appendChild(td1);
+	
+	let td2 = document.createElement('td');
+	td2.textContent = user.number;
+	tr.appendChild(td2);
+	
+	let td3 = document.createElement('td');
+	td3.textContent = user.fee;
+	tr.appendChild(td3);
+
+	let td4 = document.createElement('td');
+	td4.textContent = user.location;
+	tr.appendChild(td4);
+	
+	table.appendChild(tr);
+}
+  
+
+//   let table = document.querySelector('#table');
+
+// let tr = document.createElement('tr');
+
+// for (let i = 1; i <= 4; i++) {
+// 	let td = document.createElement('td');
+// 	tr.appendChild(td);
+// }
+
+// table.appendChild(tr);
+
+
+
+  </script>
+</body>
+</html>

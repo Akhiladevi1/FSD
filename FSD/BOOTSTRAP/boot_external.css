@@ -1,0 +1,11 @@
+/**{
+	background:whitesmoke;
+	border:1px solid whitesmoke;
+}*/
+*{
+	height:90px;
+	border-right: 20px solid white;
+}
+.a{
+	border-top:10px solid white;
+}

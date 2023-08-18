@@ -1,0 +1,22 @@
+/*div{
+	display:inline-block;
+	height: 200px;
+	width:400px;
+	background-color:green;
+	padding:120px;
+	outline: 10px dotted red;
+	marigin:10px;
+	box-sizing: border-box;
+}*/
+div{
+	height:100px;
+	width:300px;
+	background-color:silver;
+}
+.abc{
+	height:100px;
+	width:300px;
+	background-color:slategray;
+	outline:10px dashed red;
+	text-align:center;
+}

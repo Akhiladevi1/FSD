@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js intro</title>
+</head>
+<body>
+<h1>javascript introduction</h1>
+<script type="text/javascript">
+	var a=10;
+	var b=20;
+	var c=30;
+	document.write(a);
+	console.log(b);
+	// alert(c);
+	document.write("welcome<br>");
+	document.write("welcome to",a);
+	//name
+	var name ="<br>akhila";
+	name+=" devi<br>"
+	document.write(name);
+	//adding strings and find length//
+	var name="akhi";
+	document.write(name.length+"<br>");
+	name+="madhu";
+	document.write(name.length+"<br>");
+	//using one variable
+	var name="akhi";
+	name+=" madhu,valli";
+	document.write(name+"<br>");
+
+	//know type
+	var a=10.43;
+	document.write(typeof(a)+"<br>");
+
+	var k='akhila';
+	document.write(typeof(k)+"<br>");
+
+
+	//undefined variables
+	var d;
+	d+=" this<br>"
+	document.write(d);
+
+	//string boolean
+	var g=(true);
+	document.write(typeof(g)+"<br>");
+
+    var arr=["sindhu","1","akhi"];
+    document.write(arr+"<br>");
+    //consider with index value
+    console.log(arr+"<br>")
+
+    //index values
+    var arr=["akhi","pravali","aaku","likhy"];
+    console.log(arr[1]);
+    document.write(arr[1]," "+arr[2]);
+
+    //object
+    var obj ={
+    	"name":"hari",
+    }
+    // console.log(obj.name);
+    console.log(obj['name']);
+
+    //multiple objects
+    var trainee={
+    	'name':'akhi',
+    	'roll':'123',
+    	'college':'aditya',
+    	'branch':'ece'
+    }
+    console.log(trainee.name);
+    console.log(trainee.roll);
+    console.log(trainee.college);
+    console.log(trainee.branch);
+    document.write(trainee);
+
+    //multiple details in one object
+     var nag=[{
+    	'name':'akhi',
+    	'roll':'123',
+    	'college':'pragathi',
+    	'branch':'ece'
+    },
+    {
+    	'name':'pravali',
+    	'roll':'456',
+    	'college':'aditya',
+    	'branch':'cse'
+    }]
+    console.log(nag);
+    console.log(nag[0].name,nag[0].roll,nag[0].college,nag[0].branch);
+    console.log(nag[1].name,nag[1].roll,nag[1].college,nag[1].branch);
+
+    //loop
+
+    var bachaa=[{
+    	'name':'akhi',
+    	'roll':'123',
+    	'college':'pragathi',
+    	'branch':'ece'
+    },
+    {
+    	'name':'pravali',
+    	'roll':'456',
+    	'college':'aditya',
+    	'branch':'cse'
+    },
+    {
+    	'name':'aaku',
+    	'roll':'789',
+    	'college':'aec',
+    	'branch':'mech'
+    }]   
+    console.log(bachaa);
+    console.log(bachaa.lenght);
+    for (var i=0; i<bachaa.length;i++){
+    	console.log(i,bachaa[i].name,bachaa[i].roll,bachaa[i].college,bachaa[i].branch)//for loop iteration
+    }
+    
+
+
+// accessing multiple arrays
+
+
+//     const Teachers = [
+//     {
+//         name: 'saritha',
+//         subject: 'Maths'
+//     },
+//     {
+//         name: 'ahim',
+//         subject: 'science'
+//     },
+//     {
+//         name: 'sneha',
+//         subject: 'Social'
+//     }]
+ 
+// Teachers.forEach(teacher => {
+//     for (let value in teacher) {
+//         console.log(`${teacher[value]}`)
+//     }
+// })
+
+//
+// var pravali=[{
+//     	'name':'akhi',
+//     	'roll':'123',
+//     	'college':'pragathi',
+//     	'branch':'ece'
+//     },
+//     {
+//     	'name':'pravali',
+//     	'roll':'456',
+//     	'college':'aditya',
+//     	'branch':'cse'
+//     },
+//     {
+//     	'name':'aaku',
+//     	'roll':'789',
+//     	'college':'aec',
+//     	'branch':'mech'
+//     }]   
+//     console.log(pravali);
+//     console.log(pravali.lenght);
+// for (key in pravali[i]) {
+// 				document.write(pravali[i][key]+" ")
+// 			}
+
+
+
+const Teachers = [
+    {
+        name: 'saritha',
+        subject: 'Maths'
+    },
+    {
+        name: 'ahim',
+        subject: 'science'
+    },
+    {
+        name: 'sneha',
+        subject: 'Social'
+    }]
+ 
+for (let teacher in Object.keys(Teachers)) {
+    for (let key in Teachers[teacher]) {
+        console.log(Teachers[teacher][key]);
+    }
+}
+
+
+
+//using loop accessing arrays
+var pravali=[{
+    	'name':'akhi',
+    	'roll':'123',
+    	'college':'pragathi',
+    	'branch':'ece'
+    },
+    {
+    	'name':'pravali',
+    	'roll':'456',
+    	'college':'aditya',
+    	'branch':'cse'
+    },
+    {
+    	'name':'aaku',
+    	'roll':'789',
+    	'college':'aec',
+    	'branch':'mech'
+    }] 
+    for (var i=0;i<pravali.lenght;i++){
+    	for (key in pravali[i]){
+    		document.write(pravali[i][key])
+    	}
+    	document.write("<br>");
+    }
+
+</script>
+</body>
+<!-- <script type="text/javascript" src="intro_ext.js"></script> -->
+
+</html>

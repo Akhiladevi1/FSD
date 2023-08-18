@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>var,let,const</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a=10;
+	document.write(a+"<br>");
+	let b=20;
+	document.write(b+"<br>");
+	b=30; 
+	document.write(b+"<br>");
+
+	// block level variable
+	{
+		let c=30;
+		document.write(c+"<br>");
+	}
+	// document.write(c); not possible bcoz of c is block scope variable
+
+	const atmcard=123455;
+	document.write(atmcard+"<br>");
+
+	const pi=3.14;
+	// pi=4.54; we cant re initialize 
+	document.write(pi);
+    
+
+    // declaring strings using 3 variables;
+    var name='akhila';
+    document.write (name+"<br>");
+    let carname='devi';
+    document.write(carname+"<br>");
+    const myname=('me');
+    document.write(myname+"<br>");
+
+</script>
+
+</body>
+</html>

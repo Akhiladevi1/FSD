@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>functions</title>
+</head>
+<body>
+   <script type="text/javascript">
+   	    //normal function  with no parameters
+   	     // function test(){
+   	     // 	alert("testing")
+   	     // 	// document.write("JS functions")
+   	     // }
+   	     // test() //calling the function
+
+   	 // function with one argument
+   	     function getname(name){
+   	     	document.write(name)
+   	     }
+   	     getname('akhila'+"<br>")
+
+   	     function name(a){
+   	     	console.log(a)
+   	     }
+   	     name('devi')
+
+   	     function names(ak){
+   	     	return(ak)
+   	     }
+   	     console.log('pravali')
+
+   	 //scanid
+   	     // var a=prompt("scan you id here");
+   	     // function scanyourid(rollno){
+   	     // 	document.write(rollno)
+   	     // }
+   	     // scanyourid(a)
+
+   	//function with two arguments
+   	//      function add(a,b){
+   	//      	document.write(a+b)
+   	//      }
+   	//      add(5,9)
+
+   	//    function sum(a,b){
+   	//    	document.write(a+b)
+   	//    }
+   	//    sum(4)
+
+
+   	//    function addtion(a,b){
+   	//    	return a+b;
+   	//    }
+   	//    console.log(addtion(2,5))
+
+
+   	//    var x=function mul(a,b){
+   	//    	return a*b;
+   	//    }
+   	//    document.write(x(5,9))
+
+
+      // //anonymous function is a function without functionname
+      // var x=function(a,b){
+      // 	return a*b
+      // }  
+      // document.write(x(7,4))  
+
+      //square and cube root values
+      var x=function(a,b){
+      	return a**3
+      } 
+      document.write(x(2))
+
+      //arrow function "=>"
+      //dont use keyword 
+      //passing two arguments
+      add=(a,b)=>{
+        document.write(a+b) 
+      }
+      add(5,10)
+
+     //passing with one argument
+      getname=a=>{
+      	document.write(a)
+      }
+      getname('akhi'+"<br>")
+
+     //arrow funtion with no arguments
+      test = () =>{
+      	document.write("testing"+"<br>")
+      }
+      test()
+      //in place of () we can use underscore also "_"
+      test = _ =>{
+      	document.write("tested"+"<br>")
+      }
+      test()
+
+      //output can be displayed after particular time
+      //setTimeout function
+      setTimeout (function(){
+      	document.write("enable function after 2 secs")
+      },2000)
+     
+      //callback is a function within the function as an argument
+      //it is a function passing arguments inside the function
+      setTimeout(test1,3000)
+      function test1()
+      {
+      	document.write("enable function after 3 secs")
+      }
+   </script>
+</body>
+</html>

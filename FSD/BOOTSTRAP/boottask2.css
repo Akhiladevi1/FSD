@@ -1,0 +1,31 @@
+*{
+    border: 5px solid white;
+}
+.a{
+    color: green;
+    display: inline;
+}
+.b{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: right;
+}
+.c{
+    float: right;
+}
+.e{
+    float: right;
+    margin-right: -100px;
+}
+.f{
+    float: right;
+    margin-right: -150px;
+}
+.g{
+    float: right;
+    margin-right: -50px;
+}
+.n{
+    display: inline;
+}

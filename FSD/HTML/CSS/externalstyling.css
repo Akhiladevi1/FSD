@@ -1,0 +1,56 @@
+.external{
+	border:1px solid red;
+	background-color: whitesmoke;
+}
+#idselector{
+	font-size: 20px;
+	font-family: cursive;
+}
+p{
+	font-size:70px;
+	color:red;
+	font-family: fantasy;
+}
+div{
+	height:20px;
+	width:30px;
+	background-color:blue
+}
+*{
+	font-size: 40px;
+	font-family: cursive;
+	color:green;
+}
+input[type="text"]{
+	color:red;
+}
+input[type="number"]{
+	color:green;
+}
+input[type]{
+	color:violet;
+}
+a[href]{
+	background-color: yellow;
+}
+input[type]{
+	color:blue;
+}
+a:hover{
+	color:red;
+	font-size:30px;
+}
+a:visited{
+	color:green;
+}
+a:active{
+	color:black;
+}
+div:hover{
+	height:100px;
+	width:100px;
+	background-color:pink;
+}
+a:link{
+	color:brown;
+}

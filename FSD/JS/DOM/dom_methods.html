@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom methods</title>
+</head>
+<body>
+<h1 id="tt">FSD FN batch</h1>
+<h2 id="tt1">FSD FN batch</h2>
+
+
+<p id="p1">this is first para</p>
+<p id="p2">this is second para</p>
+
+
+<img id="img_id" src="drive.jpg">
+
+<input type="text" name="" id="ins_id">
+<p id="p3">please enter name</p>
+
+<script type="text/javascript">
+	let heading1=document.getElementById('tt');heading1.innerHTML='<p>FSD morning batch</P>'
+	let heading2=document.getElementById('tt1');heading2.innerText='<p>FSD morning batch</p>'
+	let p1=document.getElementById('p1');p1.style.color="red";
+	let p2=document.getElementById('p2');p2.style.fontSize="50px";
+
+
+	// display image using js using dom method.means getting data in body and manupilating it using js.
+    let img1=document.getElementById('img_id');img1.src='images/drive.jpg';
+
+    let input=document.getElementById('ins_id');input.value='akhila';
+    let ins=document.getElementById('ins_id');ins.style.border="5px solid red";
+    let para=document.getElementById('p3');para.style.color="red";
+
+</script>
+</body>
+</html>
